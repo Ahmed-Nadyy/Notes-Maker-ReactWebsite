@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/https//Ahmed-Nadyy.github.io/Notes-Maker-ReactWebsite/static/css/main.121dad7c.css",
+    "main.js": "/https//Ahmed-Nadyy.github.io/Notes-Maker-ReactWebsite/static/js/main.5c4aa3f3.js",
+    "index.html": "/https//Ahmed-Nadyy.github.io/Notes-Maker-ReactWebsite/index.html",
+    "main.121dad7c.css.map": "/https//Ahmed-Nadyy.github.io/Notes-Maker-ReactWebsite/static/css/main.121dad7c.css.map",
+    "main.5c4aa3f3.js.map": "/https//Ahmed-Nadyy.github.io/Notes-Maker-ReactWebsite/static/js/main.5c4aa3f3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.121dad7c.css",
+    "static/js/main.5c4aa3f3.js"
+  ]
+}
