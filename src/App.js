@@ -9,7 +9,7 @@ import RegisterLayout from './component/Layouts/RegisterLayout';
 function App() {
   const routes = createBrowserRouter([
     { path: '/' ,element : <SystemLayout />},
-    { path: 'Notes-Maker-ReactWebsite' ,element : <SystemLayout />},
+    { path: '*' ,element : <SystemLayout />},
     {path: 'login', element : <LoginLayout />},
     {path: 'register', element : <RegisterLayout />},
     
