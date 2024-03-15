@@ -1,0 +1,19 @@
+HTML {
+  margin: 0;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',monospace;
+}
+/* * {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',monospace;
+  color: #fff;
+  background-color: #1a2e37;
+} */
+.navbarBody{
+  color: #fff;
+  background-color: #1a2e37;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

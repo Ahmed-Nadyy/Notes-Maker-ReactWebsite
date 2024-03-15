@@ -1,0 +1,24 @@
+.homebody {
+    background: #1a2e37;
+    min-height: 100vh;
+}
+
+.AddButton{
+    position: relative;
+    margin-top: 2vh;
+}
+.ContainerBody{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* width: 100vh; */
+}
+
+
+.sticky-dash {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40vh, 1fr)); /* Adjust the min/max width and number of columns as needed */
+    gap: 2vh; /* Adjust the gap between grid items as needed */
+    width:100%;
+    height: auto;
+}
