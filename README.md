@@ -34,10 +34,14 @@ To run this project locally, follow these steps:
    cd Notes-Maker-ReactWebsite
 
 2. **Install dependencies:**
-npm install
+
+   ```bash
+   npm install
 
 3. **Start the development server:**
-npm start
+
+   ```bash
+   npm start
 
 4. **Open your browser and visit http://localhost:3000 to see the application in action.**
 
