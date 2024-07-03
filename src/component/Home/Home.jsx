@@ -36,7 +36,8 @@ const Home = (props) => {
       setNotes(prevNotes => [...prevNotes, { title, body }]);
       setTitle("");
       setBody("");
-      deleteInputField(); // Note: This line calls deleteInputField without arguments, it might cause an error
+      // Call deleteInputField with a proper index if needed
+      // deleteInputField(index); // You need to determine which index to use here
     }
   }, [title, body, deleteInputField]);
 
@@ -47,11 +48,11 @@ const Home = (props) => {
           <div className='button-body col-lg-12 d-flex justify-content-center' onClick={addNote}><AddButton /></div>
           <div className="sticky-dash row">
             {inputNotes.map((elm, index) => (
-              <StickyMaker AddNewSticky={AddNewSticky} deleteInputField={deleteInputField} index={index} key={index} inputNote={elm} />
+              <StickyMaker AddNewSticky={AddNewSticky} deleteInputField={() => deleteInputField(index)} index={index} key={index} inputNote={elm} />
             ))}
 
             {Notes.map((note, index) => (
-              <Sticky key={index} StckyNote={note} deleteSticky={deleteSticky} index={index} />
+              <Sticky key={index} StckyNote={note} deleteSticky={() => deleteSticky(index)} index={index} />
             ))}
           </div>
         </div>
