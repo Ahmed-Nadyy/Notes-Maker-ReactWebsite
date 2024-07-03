@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "./Sticky-Maker.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTrash } from '@fortawesome/free-solid-svg-icons'; // Removed faPenToSquare as it's not used in this example
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 export default function Sticky(props) {
   const [title, setTitle] = useState("");
@@ -9,12 +9,12 @@ export default function Sticky(props) {
 
   const handleTitleInput = (event) => {
     setTitle(event.target.value);
-    // console.log(title);
+
   };
 
   const handleBodyInput = (event) => {
     setBody(event.target.value);
-    // console.log(body);
+    
   };
 
   const saveNote = () => {

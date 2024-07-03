@@ -1,12 +1,10 @@
 import React from 'react'
 import "./Sticky.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTrash,faPenToSquare } from '@fortawesome/free-solid-svg-icons' 
+import { faTrash } from '@fortawesome/free-solid-svg-icons' 
 
 export default function Sticky(props) {
-  // console.log(props.title);
-  // let {title,body} =props.elm;
-  // console.log(title);
+
   
   return (
     <>
@@ -18,7 +16,6 @@ export default function Sticky(props) {
                           <h3>{props.StckyNote.title}</h3>
                           <div>
                           <FontAwesomeIcon icon={faTrash} className='mx-2 icon ' onClick={() => props.deleteSticky(props.index)} />
-                          {/* <FontAwesomeIcon icon={faPenToSquare} className='icon'/>  */}
                           </div>
                           </div>
 

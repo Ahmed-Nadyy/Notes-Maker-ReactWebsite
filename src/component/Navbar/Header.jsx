@@ -15,24 +15,10 @@ export default function Header() {
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto ">
-              {/* <li className="nav-item ">
-                <NavLink className="nav-link" aria-current="page" to="/home">Home</NavLink>
-              </li>
-              <li className="nav-item ">
-                <NavLink className="nav-link" aria-current="page" to="/movies">Movies</NavLink>
-              </li>
-              <li className="nav-item ">
-                <NavLink className="nav-link" aria-current="page" to="/tv">Tv Show</NavLink>
-              </li>
-              <li className="nav-item ">
-                <NavLink className="nav-link" aria-current="page" to="/people">People</NavLink>
-              </li> */}
             </ul>
            
 
             <form className="d-flex" role="search">
-              {/* <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-              <button className="btn btn-outline-success" type="submit">Search</button> */}
               <Link to="/login"><button className="btn btn-outline-success mx-3" type="submit">Login</button></Link>
               <Link to="/register"><button className="btn btn-outline-success " type="submit">Register</button></Link>
             </form>
