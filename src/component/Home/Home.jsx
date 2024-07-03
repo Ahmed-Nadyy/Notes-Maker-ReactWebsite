@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import "./Home.css";
 import Sticky from '../Sticky/Sticky';
 import AddButton from '../AddButton/AddButton';
-import Sticky_Maker from '../Sticky-Maker/Sticky-Maker';
+import StickyMaker from '../Sticky-Maker/StickyMaker';
 
 const Home = (props) => {
   const [Notes, setNotes] = useState([]);
@@ -11,7 +11,7 @@ const Home = (props) => {
   const [body, setBody] = useState("");
 
   const addNote = () => {
-    setInputNotes(prevNotes => [...prevNotes, <Sticky_Maker key={Date.now()} />]);
+    setInputNotes(prevNotes => [...prevNotes, <StickyMaker key={Date.now()} />]);
   }
 
   const deleteInputField = (index) => {
@@ -47,7 +47,7 @@ const Home = (props) => {
           <div className='button-body col-lg-12 d-flex justify-content-center' onClick={addNote}><AddButton /></div>
           <div className="sticky-dash row">
             {inputNotes.map((elm, index) => (
-              <Sticky_Maker AddNewSticky={AddNewSticky} deleteInputField={deleteInputField} index={index} key={index} inputNote={elm} />
+              <StickyMaker AddNewSticky={AddNewSticky} deleteInputField={deleteInputField} index={index} key={index} inputNote={elm} />
             ))}
 
             {Notes.map((note, index) => (
