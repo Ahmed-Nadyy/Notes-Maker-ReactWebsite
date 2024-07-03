@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import "./Home.css";
 import Sticky from '../Sticky/Sticky';
 import AddButton from '../AddButton/AddButton';
@@ -14,11 +14,11 @@ const Home = (props) => {
     setInputNotes(prevNotes => [...prevNotes, <StickyMaker key={Date.now()} />]);
   }
 
-  const deleteInputField = (index) => {
+  const deleteInputField = useCallback((index) => {
     const updatedNotes = [...inputNotes];
     updatedNotes.splice(index, 1);
     setInputNotes(updatedNotes);
-  }
+  }, [inputNotes]);
 
   const deleteSticky = (index) => {
     const updatedNewNotes = [...Notes];
@@ -36,9 +36,9 @@ const Home = (props) => {
       setNotes(prevNotes => [...prevNotes, { title, body }]);
       setTitle("");
       setBody("");
-      deleteInputField();
+      deleteInputField(); // Note: This line calls deleteInputField without arguments, it might cause an error
     }
-  }, [title, body, Notes]);
+  }, [title, body, deleteInputField]);
 
   return (
     <div className="homebody">
@@ -53,9 +53,6 @@ const Home = (props) => {
             {Notes.map((note, index) => (
               <Sticky key={index} StckyNote={note} deleteSticky={deleteSticky} index={index} />
             ))}
-
-
-            {/* {Notes} */}
           </div>
         </div>
       </div>
